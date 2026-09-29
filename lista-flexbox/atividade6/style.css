@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+}
+
+/* a) layout com grid */
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: 80px 250px 80px;
+    grid-template-areas:
+        "header header header"
+        "article aside nav"
+        "footer footer footer";
+}
+
+header, article, aside, nav, footer {
+    padding: 12px;
+}
+
+header {
+    grid-area: header;
+    background-color: #9dd20b;
+}
+
+article {
+    grid-area: article;
+    background-color: white;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #f5f3da;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #d5e8d7;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #9dd20b;
+}
+
+/* b) responsividade: telas menores que 600px ficam um embaixo do outro */
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header"
+            "article"
+            "aside"
+            "nav"
+            "footer";
+    }
+
+    header, article, aside, nav, footer {
+        height: 80px;
+    }
+}

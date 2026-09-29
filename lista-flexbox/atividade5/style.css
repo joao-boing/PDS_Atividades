@@ -1,0 +1,109 @@
+body {
+    background-color: #eeecef;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.container {
+    background-color: white;
+    width: 500px;
+    height: 260px;
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.esquerda {
+    width: 305px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cima {
+    height: 180px;
+    display: flex;
+    gap: 5px;
+}
+
+.coluna {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.laranja {
+    height: 95px;
+    background-color: #f79c27;
+}
+
+.azul {
+    height: 80px;
+    background-color: #b8c9e0;
+}
+
+.rosa {
+    flex: 1;
+    background-color: #f4b9a6;
+}
+
+.amarelo {
+    flex: 1;
+    background-color: #f2b138;
+}
+
+.direita {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.verde-claro {
+    height: 75px;
+    background-color: #c9dfdf;
+}
+
+.baixo {
+    flex: 1;
+    display: flex;
+    gap: 5px;
+}
+
+.verde {
+    flex: 1;
+    background-color: #bcca6f;
+}
+
+.bolinhas {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bolinha {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.b1 {
+    background-color: #f29560;
+}
+
+.b2 {
+    background-color: #d9b0b0;
+}
+
+.b3 {
+    background-color: #bfcca0;
+}
+
+.b4 {
+    background-color: #d8cbee;
+}
